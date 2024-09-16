@@ -1,10 +1,10 @@
 ﻿using JImage.Server.ViewModels.ViewModels.Menu;
-using JImage.Server.Views.Views.Base;
+using JImage.Server.Views.Views.BaseModal;
 
 
 namespace JImage.Server.Views.Views.Menu
 {
-    public partial class MenuView : BaseModalView
+    public partial class MenuView : BaseView
     {
         private readonly MenuViewModel _viewModel;
 
@@ -13,6 +13,8 @@ namespace JImage.Server.Views.Views.Menu
         {
             InitializeComponent();
             this._viewModel = viewModel;
+            
+            btnAdminMenu.Visible = false;
         }
     }
 }

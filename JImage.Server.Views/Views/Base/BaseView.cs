@@ -7,7 +7,7 @@ using JImage.Server.Views.Views.Admin;
 using MaterialSkinGT;
 using MaterialSkinGT.Controls;
 
-namespace JImage.Server.Views.Views.Base
+namespace JImage.Server.Views.Views.BaseModal
 {
     public partial class BaseView : MaterialForm
     {

@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using JImage.Server.ViewModels.ViewModels.Admin;
-using JImage.Server.Views.Views.Base;
+using JImage.Server.Views.Views.BaseModal;
 using JImage.Server.Views.Views.CaptureImage;
 
 namespace JImage.Server.Views.Views.Admin

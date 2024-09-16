@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using JImage.Server.Views.Views.Base;
+using JImage.Server.Views.Views.BaseModal;
 using Microsoft.Extensions.DependencyInjection;
 
 

@@ -1,5 +1,5 @@
 ﻿using JImage.Server.ViewModels.ViewModels.ApplyImageAutomatic;
-using JImage.Server.Views.Views.Base;
+using JImage.Server.Views.Views.BaseModal;
 using JImage.Server.Views.Views.JImageX;
 using JImage.Server.Views.Views.Reboot;
 using System.Threading.Tasks;

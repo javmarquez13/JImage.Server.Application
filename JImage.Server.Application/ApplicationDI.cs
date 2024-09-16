@@ -10,7 +10,7 @@ using JImage.Server.ViewModels.ViewModels.Base;
 using JImage.Server.ViewModels.ViewModels.CaptureImageViewModel;
 using JImage.Server.ViewModels.ViewModels.JImageX;
 using JImage.Server.Views.Helpers;
-using JImage.Server.Views.Views.Base;
+using JImage.Server.Views.Views.BaseModal;
 using JImage.Server.Views.Views.CaptureImage;
 using JImage.Server.Views.Views.JImageX;
 using Microsoft.Extensions.DependencyInjection;

@@ -1,5 +1,5 @@
 ﻿using JImage.Server.ViewModels.ViewModels.ApplyImageManual;
-using JImage.Server.Views.Views.Base;
+using JImage.Server.Views.Views.BaseModal;
 
 namespace JImage.Server.Views.Views.ApplyImageManual
 {

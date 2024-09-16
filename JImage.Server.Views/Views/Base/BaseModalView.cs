@@ -6,7 +6,7 @@ using JImage.Server.Views.Helpers;
 using MaterialSkinGT;
 using MaterialSkinGT.Controls;
 
-namespace JImage.Server.Views.Views.Base
+namespace JImage.Server.Views.Views.BaseModal
 {
     public partial class BaseModalView : MaterialForm
     {

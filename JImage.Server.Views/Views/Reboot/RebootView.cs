@@ -1,9 +1,9 @@
 ﻿using JImage.Server.ViewModels.ViewModels.Reboot;
-using JImage.Server.Views.Views.Base;
+using JImage.Server.Views.Views.BaseModal;
 
 namespace JImage.Server.Views.Views.Reboot
 {
-    public partial class RebootView : BaseModalView
+    public partial class RebootView : BaseView
     {
         private readonly RebootViewModel _viewModel;
         public RebootView(RebootViewModel viewModel) : 
@@ -11,6 +11,8 @@ namespace JImage.Server.Views.Views.Reboot
         {
             InitializeComponent();
             this._viewModel = viewModel;
+
+            btnAdminMenu.Visible = false;
         }
 
 

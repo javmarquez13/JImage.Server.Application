@@ -1,20 +1,23 @@
 ﻿using System;
 using System.Threading.Tasks;
-using JImage.Server.Views.Views.Base;
+using JImage.Server.Views.Views.BaseModal;
 using JImage.Server.ViewModels.ViewModels.JImageX;
 using JImage.Server.Views.Helpers;
 
 namespace JImage.Server.Views.Views.JImageX
 {
-    public partial class JImageXView : BaseModalView
+    public partial class JImageXView : BaseView
     {
         private readonly JImageXViewModel _viewModel;
         public JImageXView(JImageXViewModel viewModel) 
+            : base(Title: "JImageX Service", viewModel)
 
         {
             InitializeComponent();
             this._viewModel = viewModel;
             this._viewModel.PropertyChanged += ViewModel_PropertyChanged;
+
+            btnAdminMenu.Visible = false;
         }
 
 

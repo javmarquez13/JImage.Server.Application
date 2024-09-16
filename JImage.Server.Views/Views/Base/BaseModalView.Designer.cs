@@ -1,4 +1,4 @@
-﻿namespace JImage.Server.Views.Views.Base
+﻿namespace JImage.Server.Views.Views.BaseModal
 {
     partial class BaseModalView
     {

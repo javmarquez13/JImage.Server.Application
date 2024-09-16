@@ -7,7 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using JImage.Server.ViewModels.ViewModels.CaptureImageViewModel;
 using JImage.Server.Views.Helpers;
-using JImage.Server.Views.Views.Base;
+using JImage.Server.Views.Views.BaseModal;
 using JImage.Server.Views.Views.JImageX;
 
 namespace JImage.Server.Views.Views.CaptureImage
