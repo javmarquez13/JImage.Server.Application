@@ -20,6 +20,10 @@ using JImage.Server.ViewModels.ViewModels.Reboot;
 using JImage.Server.Views.Views.Admin;
 using JImage.Server.ViewModels.ViewModels.Admin;
 using JImage.Server.Views.Views.ApplyImageAutomatic;
+using JImage.Server.Views.Views.Menu;
+using JImage.Server.ViewModels.ViewModels.Menu;
+using JImage.Server.Views.Views.ApplyImageManual;
+using JImage.Server.ViewModels.ViewModels.ApplyImageManual;
 
 namespace JImage.Server.Application
 {
@@ -42,6 +46,8 @@ namespace JImage.Server.Application
             services.AddTransient<JImageXView>();
             services.AddTransient<RebootView>();
             services.AddTransient<AdminView>();
+            services.AddTransient<MenuView>();
+            services.AddTransient<ApplyImageManualView>();
         }
 
         public static void ConfigureViewModels(ServiceCollection services)
@@ -52,6 +58,9 @@ namespace JImage.Server.Application
             services.AddScoped<JImageXViewModel>();
             services.AddScoped<RebootViewModel>();
             services.AddScoped<AdminViewModel>();
+            services.AddScoped<MenuViewModel>();
+            services.AddScoped<ApplyImageManualViewModel>();
+
         }
 
         public static void ConfigureServices(ServiceCollection services)

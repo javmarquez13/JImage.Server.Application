@@ -48,7 +48,7 @@ namespace JImage.Server.Views.Views.ApplyImageAutomatic
 
         private void ApplyImageService()
         {
-            var createView = UtilsViews.CreateModalView<JImageXView>();
+            var createView = UtilsViews.CreateView<JImageXView>();
 
             createView.Shown += async (a, b) =>
             {
@@ -62,7 +62,7 @@ namespace JImage.Server.Views.Views.ApplyImageAutomatic
 
         private void RebootingService()
         {
-            var createView = UtilsViews.CreateModalView<Reboot.RebootView>();
+            var createView = UtilsViews.CreateView<RebootView>();
 
 
             createView.Shown += (a, b) =>

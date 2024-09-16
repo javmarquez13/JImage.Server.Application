@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using JImage.Server.ViewModels.ViewModels.Admin;
 using JImage.Server.Views.Views.BaseModal;
 using JImage.Server.Views.Views.CaptureImage;
+using JImage.Server.Views.Views.Menu;
 
 namespace JImage.Server.Views.Views.Admin
 {
@@ -33,7 +34,7 @@ namespace JImage.Server.Views.Views.Admin
 
         private void BtnLogin_Click(object sender, EventArgs e)
         {
-            var createView = UtilsViews.CreateView<CaptureImageView>();
+            var createView = UtilsViews.CreateView<MenuView>();
 
             createView.Shown += async (a, b) =>
             {

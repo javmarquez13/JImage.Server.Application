@@ -28,10 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
+            btnOpenCaptureImageModal = new MaterialSkinGT.Controls.MaterialButton();
             btnOpenApplyImageManualModal = new MaterialSkinGT.Controls.MaterialButton();
-            materialButton1 = new MaterialSkinGT.Controls.MaterialButton();
-            materialButton2 = new MaterialSkinGT.Controls.MaterialButton();
+            btnOpenApplyImageAutomaticModal = new MaterialSkinGT.Controls.MaterialButton();
             SuspendLayout();
+            // 
+            // btnOpenCaptureImageModal
+            // 
+            btnOpenCaptureImageModal.AutoSize = false;
+            btnOpenCaptureImageModal.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            btnOpenCaptureImageModal.Density = MaterialSkinGT.Controls.MaterialButton.MaterialButtonDensity.Default;
+            btnOpenCaptureImageModal.Depth = 0;
+            btnOpenCaptureImageModal.HighEmphasis = true;
+            btnOpenCaptureImageModal.Icon = null;
+            btnOpenCaptureImageModal.Location = new System.Drawing.Point(28, 122);
+            btnOpenCaptureImageModal.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            btnOpenCaptureImageModal.MouseState = MaterialSkinGT.MouseState.HOVER;
+            btnOpenCaptureImageModal.Name = "btnOpenCaptureImageModal";
+            btnOpenCaptureImageModal.NoAccentTextColor = System.Drawing.Color.Empty;
+            btnOpenCaptureImageModal.Size = new System.Drawing.Size(231, 186);
+            btnOpenCaptureImageModal.TabIndex = 1;
+            btnOpenCaptureImageModal.Text = "CAPTURE";
+            btnOpenCaptureImageModal.Type = MaterialSkinGT.Controls.MaterialButton.MaterialButtonType.Contained;
+            btnOpenCaptureImageModal.UseAccentColor = false;
+            btnOpenCaptureImageModal.UseVisualStyleBackColor = true;
+            btnOpenCaptureImageModal.Click += btnOpenCaptureImageModal_Click;
             // 
             // btnOpenApplyImageManualModal
             // 
@@ -41,66 +62,48 @@
             btnOpenApplyImageManualModal.Depth = 0;
             btnOpenApplyImageManualModal.HighEmphasis = true;
             btnOpenApplyImageManualModal.Icon = null;
-            btnOpenApplyImageManualModal.Location = new System.Drawing.Point(28, 122);
+            btnOpenApplyImageManualModal.Location = new System.Drawing.Point(291, 122);
             btnOpenApplyImageManualModal.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             btnOpenApplyImageManualModal.MouseState = MaterialSkinGT.MouseState.HOVER;
             btnOpenApplyImageManualModal.Name = "btnOpenApplyImageManualModal";
             btnOpenApplyImageManualModal.NoAccentTextColor = System.Drawing.Color.Empty;
             btnOpenApplyImageManualModal.Size = new System.Drawing.Size(231, 186);
-            btnOpenApplyImageManualModal.TabIndex = 1;
-            btnOpenApplyImageManualModal.Text = "CAPTURE";
+            btnOpenApplyImageManualModal.TabIndex = 2;
+            btnOpenApplyImageManualModal.Text = "APPLY MANUAL";
             btnOpenApplyImageManualModal.Type = MaterialSkinGT.Controls.MaterialButton.MaterialButtonType.Contained;
             btnOpenApplyImageManualModal.UseAccentColor = false;
             btnOpenApplyImageManualModal.UseVisualStyleBackColor = true;
+            btnOpenApplyImageManualModal.Click += btnOpenApplyImageManualModal_Click;
             // 
-            // materialButton1
+            // btnOpenApplyImageAutomaticModal
             // 
-            materialButton1.AutoSize = false;
-            materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            materialButton1.Density = MaterialSkinGT.Controls.MaterialButton.MaterialButtonDensity.Default;
-            materialButton1.Depth = 0;
-            materialButton1.HighEmphasis = true;
-            materialButton1.Icon = null;
-            materialButton1.Location = new System.Drawing.Point(291, 122);
-            materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            materialButton1.MouseState = MaterialSkinGT.MouseState.HOVER;
-            materialButton1.Name = "materialButton1";
-            materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
-            materialButton1.Size = new System.Drawing.Size(231, 186);
-            materialButton1.TabIndex = 2;
-            materialButton1.Text = "APPLY MANUAL";
-            materialButton1.Type = MaterialSkinGT.Controls.MaterialButton.MaterialButtonType.Contained;
-            materialButton1.UseAccentColor = false;
-            materialButton1.UseVisualStyleBackColor = true;
-            // 
-            // materialButton2
-            // 
-            materialButton2.AutoSize = false;
-            materialButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            materialButton2.Density = MaterialSkinGT.Controls.MaterialButton.MaterialButtonDensity.Default;
-            materialButton2.Depth = 0;
-            materialButton2.HighEmphasis = true;
-            materialButton2.Icon = null;
-            materialButton2.Location = new System.Drawing.Point(558, 122);
-            materialButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            materialButton2.MouseState = MaterialSkinGT.MouseState.HOVER;
-            materialButton2.Name = "materialButton2";
-            materialButton2.NoAccentTextColor = System.Drawing.Color.Empty;
-            materialButton2.Size = new System.Drawing.Size(231, 186);
-            materialButton2.TabIndex = 3;
-            materialButton2.Text = "APPLY AUTOMATIC";
-            materialButton2.Type = MaterialSkinGT.Controls.MaterialButton.MaterialButtonType.Contained;
-            materialButton2.UseAccentColor = false;
-            materialButton2.UseVisualStyleBackColor = true;
+            btnOpenApplyImageAutomaticModal.AutoSize = false;
+            btnOpenApplyImageAutomaticModal.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            btnOpenApplyImageAutomaticModal.Density = MaterialSkinGT.Controls.MaterialButton.MaterialButtonDensity.Default;
+            btnOpenApplyImageAutomaticModal.Depth = 0;
+            btnOpenApplyImageAutomaticModal.HighEmphasis = true;
+            btnOpenApplyImageAutomaticModal.Icon = null;
+            btnOpenApplyImageAutomaticModal.Location = new System.Drawing.Point(558, 122);
+            btnOpenApplyImageAutomaticModal.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            btnOpenApplyImageAutomaticModal.MouseState = MaterialSkinGT.MouseState.HOVER;
+            btnOpenApplyImageAutomaticModal.Name = "btnOpenApplyImageAutomaticModal";
+            btnOpenApplyImageAutomaticModal.NoAccentTextColor = System.Drawing.Color.Empty;
+            btnOpenApplyImageAutomaticModal.Size = new System.Drawing.Size(231, 186);
+            btnOpenApplyImageAutomaticModal.TabIndex = 3;
+            btnOpenApplyImageAutomaticModal.Text = "APPLY AUTOMATIC";
+            btnOpenApplyImageAutomaticModal.Type = MaterialSkinGT.Controls.MaterialButton.MaterialButtonType.Contained;
+            btnOpenApplyImageAutomaticModal.UseAccentColor = false;
+            btnOpenApplyImageAutomaticModal.UseVisualStyleBackColor = true;
+            btnOpenApplyImageAutomaticModal.Click += btnOpenApplyImageAutomaticModal_Click;
             // 
             // MenuView
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             ClientSize = new System.Drawing.Size(817, 380);
-            Controls.Add(materialButton2);
-            Controls.Add(materialButton1);
+            Controls.Add(btnOpenApplyImageAutomaticModal);
             Controls.Add(btnOpenApplyImageManualModal);
+            Controls.Add(btnOpenCaptureImageModal);
             Name = "MenuView";
             Text = "MenuView";
             ResumeLayout(false);
@@ -108,8 +111,8 @@
 
         #endregion
 
+        private MaterialSkinGT.Controls.MaterialButton btnOpenCaptureImageModal;
         private MaterialSkinGT.Controls.MaterialButton btnOpenApplyImageManualModal;
-        private MaterialSkinGT.Controls.MaterialButton materialButton1;
-        private MaterialSkinGT.Controls.MaterialButton materialButton2;
+        private MaterialSkinGT.Controls.MaterialButton btnOpenApplyImageAutomaticModal;
     }
 }

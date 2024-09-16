@@ -27,7 +27,7 @@ namespace JImage.Server.Views.Views.CaptureImage
 
         private void CaptureImageService()
         {
-            var createView = UtilsViews.CreateModalView<JImageXView>();
+            var createView = UtilsViews.CreateView<JImageXView>();
 
             createView.Shown += async (a, b) =>
             {
