@@ -38,7 +38,7 @@ namespace JImage.Server.Views.Views.Menu
 
             createView.Shown += async (a, b) =>
             {
-
+                await createView.LoadDirectories();
             };
 
             createView.ShowDialog();

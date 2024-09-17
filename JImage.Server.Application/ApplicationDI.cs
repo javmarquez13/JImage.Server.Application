@@ -24,6 +24,9 @@ using JImage.Server.Views.Views.Menu;
 using JImage.Server.ViewModels.ViewModels.Menu;
 using JImage.Server.Views.Views.ApplyImageManual;
 using JImage.Server.ViewModels.ViewModels.ApplyImageManual;
+using JImage.Server.ViewModels.ViewModels.FilesExplorer.FormFields;
+using JImage.Server.Views.Views.FilesExplorer;
+using JImage.Server.ViewModels.ViewModels.FilesExplorer;
 
 namespace JImage.Server.Application
 {
@@ -48,6 +51,7 @@ namespace JImage.Server.Application
             services.AddTransient<AdminView>();
             services.AddTransient<MenuView>();
             services.AddTransient<ApplyImageManualView>();
+            services.AddTransient<FilesExplorerView>();
         }
 
         public static void ConfigureViewModels(ServiceCollection services)
@@ -60,6 +64,7 @@ namespace JImage.Server.Application
             services.AddScoped<AdminViewModel>();
             services.AddScoped<MenuViewModel>();
             services.AddScoped<ApplyImageManualViewModel>();
+            services.AddScoped<FilesExplorerViewModel>();
 
         }
 

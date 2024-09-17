@@ -23,18 +23,13 @@ namespace JImage.Server.Views.Views.Admin
             InitializeComponent();
 
             this._viewModel = viewModel;
-
-
-
         }
 
-        
-
+       
         public async Task LoadCatalogsBindingDataAndCommands()
         {
             await this._viewModel.LoadCatalogs(); BindingData(); BindCommands();
         }
-
 
         private void BindingData()
         {       
@@ -59,7 +54,6 @@ namespace JImage.Server.Views.Views.Admin
                 DataSourceUpdateMode.OnPropertyChanged);
         }
 
-
         private void BindCommands()
         {
             btnLogin.Click += async(a, b)=> 
@@ -67,7 +61,6 @@ namespace JImage.Server.Views.Views.Admin
                 await LoggingCommand();
             };
         }
-
 
 
         private async Task LoggingCommand()

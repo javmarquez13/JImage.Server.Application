@@ -11,5 +11,13 @@ namespace JImage.Server.ViewModels.ViewModels.ApplyImageManual
         {
         
         }
+
+
+        private List<string> _ImageCatalog;
+        public List<string> ImageCatalog
+        {
+            get=> _ImageCatalog;
+            set => SetProperty(ref _ImageCatalog, value);   
+        }
     }
 }

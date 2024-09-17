@@ -28,44 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] { "", "AmazonImg1", "AmazonImg2", "AmazonImg3", "" }, -1);
-            materialListView1 = new MaterialSkinGT.Controls.MaterialListView();
             materialLabel1 = new MaterialSkinGT.Controls.MaterialLabel();
             btnApplyImage = new MaterialSkinGT.Controls.MaterialButton();
-            btnSelectRootPath = new MaterialSkinGT.Controls.MaterialButton();
+            treeViewDirectories = new System.Windows.Forms.TreeView();
+            lViewFiles = new MaterialSkinGT.Controls.MaterialListView();
+            materialLabel2 = new MaterialSkinGT.Controls.MaterialLabel();
             SuspendLayout();
-            // 
-            // materialListView1
-            // 
-            materialListView1.AutoSizeTable = false;
-            materialListView1.BackColor = System.Drawing.Color.FromArgb(255, 255, 255);
-            materialListView1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            materialListView1.Depth = 0;
-            materialListView1.FullRowSelect = true;
-            materialListView1.HideSelection = false;
-            materialListView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] { listViewItem1 });
-            materialListView1.Location = new System.Drawing.Point(6, 110);
-            materialListView1.MinimumSize = new System.Drawing.Size(200, 100);
-            materialListView1.MouseLocation = new System.Drawing.Point(-1, -1);
-            materialListView1.MouseState = MaterialSkinGT.MouseState.OUT;
-            materialListView1.Name = "materialListView1";
-            materialListView1.OwnerDraw = true;
-            materialListView1.Size = new System.Drawing.Size(788, 219);
-            materialListView1.TabIndex = 0;
-            materialListView1.UseCompatibleStateImageBehavior = false;
-            materialListView1.View = System.Windows.Forms.View.Details;
             // 
             // materialLabel1
             // 
             materialLabel1.AutoSize = true;
             materialLabel1.Depth = 0;
             materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            materialLabel1.Location = new System.Drawing.Point(6, 88);
+            materialLabel1.Location = new System.Drawing.Point(61, 153);
             materialLabel1.MouseState = MaterialSkinGT.MouseState.HOVER;
             materialLabel1.Name = "materialLabel1";
-            materialLabel1.Size = new System.Drawing.Size(57, 19);
+            materialLabel1.Size = new System.Drawing.Size(80, 19);
             materialLabel1.TabIndex = 1;
-            materialLabel1.Text = "Images:";
+            materialLabel1.Text = "Directories:";
             // 
             // btnApplyImage
             // 
@@ -74,7 +54,7 @@
             btnApplyImage.Depth = 0;
             btnApplyImage.HighEmphasis = true;
             btnApplyImage.Icon = null;
-            btnApplyImage.Location = new System.Drawing.Point(726, 486);
+            btnApplyImage.Location = new System.Drawing.Point(836, 546);
             btnApplyImage.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             btnApplyImage.MouseState = MaterialSkinGT.MouseState.HOVER;
             btnApplyImage.Name = "btnApplyImage";
@@ -86,34 +66,55 @@
             btnApplyImage.UseAccentColor = false;
             btnApplyImage.UseVisualStyleBackColor = true;
             // 
-            // btnSelectRootPath
+            // treeViewDirectories
             // 
-            btnSelectRootPath.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            btnSelectRootPath.Density = MaterialSkinGT.Controls.MaterialButton.MaterialButtonDensity.Default;
-            btnSelectRootPath.Depth = 0;
-            btnSelectRootPath.HighEmphasis = true;
-            btnSelectRootPath.Icon = null;
-            btnSelectRootPath.Location = new System.Drawing.Point(678, 338);
-            btnSelectRootPath.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            btnSelectRootPath.MouseState = MaterialSkinGT.MouseState.HOVER;
-            btnSelectRootPath.Name = "btnSelectRootPath";
-            btnSelectRootPath.NoAccentTextColor = System.Drawing.Color.Empty;
-            btnSelectRootPath.Size = new System.Drawing.Size(116, 36);
-            btnSelectRootPath.TabIndex = 3;
-            btnSelectRootPath.Text = "SELECT PATH";
-            btnSelectRootPath.Type = MaterialSkinGT.Controls.MaterialButton.MaterialButtonType.Contained;
-            btnSelectRootPath.UseAccentColor = false;
-            btnSelectRootPath.UseVisualStyleBackColor = true;
+            treeViewDirectories.Location = new System.Drawing.Point(61, 175);
+            treeViewDirectories.Name = "treeViewDirectories";
+            treeViewDirectories.Size = new System.Drawing.Size(788, 63);
+            treeViewDirectories.TabIndex = 4;
+            treeViewDirectories.AfterSelect += treeViewDirectories_AfterSelect;
+            // 
+            // lViewFiles
+            // 
+            lViewFiles.AutoSizeTable = false;
+            lViewFiles.BackColor = System.Drawing.Color.FromArgb(255, 255, 255);
+            lViewFiles.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            lViewFiles.Depth = 0;
+            lViewFiles.FullRowSelect = true;
+            lViewFiles.HideSelection = false;
+            lViewFiles.Location = new System.Drawing.Point(61, 307);
+            lViewFiles.MinimumSize = new System.Drawing.Size(200, 100);
+            lViewFiles.MouseLocation = new System.Drawing.Point(-1, -1);
+            lViewFiles.MouseState = MaterialSkinGT.MouseState.OUT;
+            lViewFiles.Name = "lViewFiles";
+            lViewFiles.OwnerDraw = true;
+            lViewFiles.Size = new System.Drawing.Size(788, 203);
+            lViewFiles.TabIndex = 5;
+            lViewFiles.UseCompatibleStateImageBehavior = false;
+            lViewFiles.View = System.Windows.Forms.View.Details;
+            // 
+            // materialLabel2
+            // 
+            materialLabel2.AutoSize = true;
+            materialLabel2.Depth = 0;
+            materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            materialLabel2.Location = new System.Drawing.Point(61, 285);
+            materialLabel2.MouseState = MaterialSkinGT.MouseState.HOVER;
+            materialLabel2.Name = "materialLabel2";
+            materialLabel2.Size = new System.Drawing.Size(38, 19);
+            materialLabel2.TabIndex = 6;
+            materialLabel2.Text = "Files:";
             // 
             // ApplyImageManualView
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(800, 531);
-            Controls.Add(btnSelectRootPath);
+            ClientSize = new System.Drawing.Size(910, 591);
+            Controls.Add(materialLabel2);
+            Controls.Add(lViewFiles);
+            Controls.Add(treeViewDirectories);
             Controls.Add(btnApplyImage);
             Controls.Add(materialLabel1);
-            Controls.Add(materialListView1);
             Name = "ApplyImageManualView";
             Text = "ApplyImageManualView";
             ResumeLayout(false);
@@ -121,10 +122,10 @@
         }
 
         #endregion
-
-        private MaterialSkinGT.Controls.MaterialListView materialListView1;
         private MaterialSkinGT.Controls.MaterialLabel materialLabel1;
         private MaterialSkinGT.Controls.MaterialButton btnApplyImage;
-        private MaterialSkinGT.Controls.MaterialButton btnSelectRootPath;
+        private System.Windows.Forms.TreeView treeViewDirectories;
+        private MaterialSkinGT.Controls.MaterialListView lViewFiles;
+        private MaterialSkinGT.Controls.MaterialLabel materialLabel2;
     }
 }

@@ -41,7 +41,7 @@
             btnOpenCaptureImageModal.Depth = 0;
             btnOpenCaptureImageModal.HighEmphasis = true;
             btnOpenCaptureImageModal.Icon = null;
-            btnOpenCaptureImageModal.Location = new System.Drawing.Point(28, 122);
+            btnOpenCaptureImageModal.Location = new System.Drawing.Point(29, 167);
             btnOpenCaptureImageModal.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             btnOpenCaptureImageModal.MouseState = MaterialSkinGT.MouseState.HOVER;
             btnOpenCaptureImageModal.Name = "btnOpenCaptureImageModal";
@@ -62,7 +62,7 @@
             btnOpenApplyImageManualModal.Depth = 0;
             btnOpenApplyImageManualModal.HighEmphasis = true;
             btnOpenApplyImageManualModal.Icon = null;
-            btnOpenApplyImageManualModal.Location = new System.Drawing.Point(291, 122);
+            btnOpenApplyImageManualModal.Location = new System.Drawing.Point(292, 167);
             btnOpenApplyImageManualModal.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             btnOpenApplyImageManualModal.MouseState = MaterialSkinGT.MouseState.HOVER;
             btnOpenApplyImageManualModal.Name = "btnOpenApplyImageManualModal";
@@ -83,7 +83,7 @@
             btnOpenApplyImageAutomaticModal.Depth = 0;
             btnOpenApplyImageAutomaticModal.HighEmphasis = true;
             btnOpenApplyImageAutomaticModal.Icon = null;
-            btnOpenApplyImageAutomaticModal.Location = new System.Drawing.Point(558, 122);
+            btnOpenApplyImageAutomaticModal.Location = new System.Drawing.Point(559, 167);
             btnOpenApplyImageAutomaticModal.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             btnOpenApplyImageAutomaticModal.MouseState = MaterialSkinGT.MouseState.HOVER;
             btnOpenApplyImageAutomaticModal.Name = "btnOpenApplyImageAutomaticModal";
@@ -100,7 +100,7 @@
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            ClientSize = new System.Drawing.Size(817, 380);
+            ClientSize = new System.Drawing.Size(817, 466);
             Controls.Add(btnOpenApplyImageAutomaticModal);
             Controls.Add(btnOpenApplyImageManualModal);
             Controls.Add(btnOpenCaptureImageModal);
