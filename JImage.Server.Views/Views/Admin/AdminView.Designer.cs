@@ -28,35 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            materialComboBox1 = new MaterialSkinGT.Controls.MaterialComboBox();
+            cbUsers = new MaterialSkinGT.Controls.MaterialComboBox();
             materialLabel1 = new MaterialSkinGT.Controls.MaterialLabel();
-            materialTextBox21 = new MaterialSkinGT.Controls.MaterialTextBox2();
+            txtPassowrd = new MaterialSkinGT.Controls.MaterialTextBox2();
             materialLabel2 = new MaterialSkinGT.Controls.MaterialLabel();
             btnLogin = new MaterialSkinGT.Controls.MaterialButton();
             SuspendLayout();
             // 
-            // materialComboBox1
+            // cbUsers
             // 
-            materialComboBox1.AutoResize = false;
-            materialComboBox1.BackColor = System.Drawing.Color.FromArgb(255, 255, 255);
-            materialComboBox1.Depth = 0;
-            materialComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            materialComboBox1.DropDownHeight = 174;
-            materialComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            materialComboBox1.DropDownWidth = 121;
-            materialComboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            materialComboBox1.ForeColor = System.Drawing.Color.FromArgb(222, 0, 0, 0);
-            materialComboBox1.FormattingEnabled = true;
-            materialComboBox1.IntegralHeight = false;
-            materialComboBox1.ItemHeight = 43;
-            materialComboBox1.Items.AddRange(new object[] { "Test Enginner VI", "Test Enginner III", "Test Engineer II", "Test Engineer I" });
-            materialComboBox1.Location = new System.Drawing.Point(36, 170);
-            materialComboBox1.MaxDropDownItems = 4;
-            materialComboBox1.MouseState = MaterialSkinGT.MouseState.OUT;
-            materialComboBox1.Name = "materialComboBox1";
-            materialComboBox1.Size = new System.Drawing.Size(300, 49);
-            materialComboBox1.StartIndex = 0;
-            materialComboBox1.TabIndex = 0;
+            cbUsers.AutoResize = false;
+            cbUsers.BackColor = System.Drawing.Color.FromArgb(255, 255, 255);
+            cbUsers.Depth = 0;
+            cbUsers.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            cbUsers.DropDownHeight = 174;
+            cbUsers.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            cbUsers.DropDownWidth = 121;
+            cbUsers.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            cbUsers.ForeColor = System.Drawing.Color.FromArgb(222, 0, 0, 0);
+            cbUsers.FormattingEnabled = true;
+            cbUsers.IntegralHeight = false;
+            cbUsers.ItemHeight = 43;
+            cbUsers.Location = new System.Drawing.Point(36, 170);
+            cbUsers.MaxDropDownItems = 4;
+            cbUsers.MouseState = MaterialSkinGT.MouseState.OUT;
+            cbUsers.Name = "cbUsers";
+            cbUsers.Size = new System.Drawing.Size(300, 49);
+            cbUsers.StartIndex = 0;
+            cbUsers.TabIndex = 0;
             // 
             // materialLabel1
             // 
@@ -70,35 +69,35 @@
             materialLabel1.TabIndex = 1;
             materialLabel1.Text = "User:";
             // 
-            // materialTextBox21
+            // txtPassowrd
             // 
-            materialTextBox21.AnimateReadOnly = false;
-            materialTextBox21.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            materialTextBox21.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            materialTextBox21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            materialTextBox21.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            materialTextBox21.Depth = 0;
-            materialTextBox21.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            materialTextBox21.HideSelection = true;
-            materialTextBox21.LeadingIcon = null;
-            materialTextBox21.Location = new System.Drawing.Point(36, 264);
-            materialTextBox21.MaxLength = 32767;
-            materialTextBox21.MouseState = MaterialSkinGT.MouseState.OUT;
-            materialTextBox21.Name = "materialTextBox21";
-            materialTextBox21.PasswordChar = '*';
-            materialTextBox21.PrefixSuffixText = null;
-            materialTextBox21.ReadOnly = false;
-            materialTextBox21.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            materialTextBox21.SelectedText = "";
-            materialTextBox21.SelectionLength = 0;
-            materialTextBox21.SelectionStart = 0;
-            materialTextBox21.ShortcutsEnabled = true;
-            materialTextBox21.Size = new System.Drawing.Size(300, 48);
-            materialTextBox21.TabIndex = 2;
-            materialTextBox21.TabStop = false;
-            materialTextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            materialTextBox21.TrailingIcon = null;
-            materialTextBox21.UseSystemPasswordChar = false;
+            txtPassowrd.AnimateReadOnly = false;
+            txtPassowrd.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            txtPassowrd.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            txtPassowrd.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            txtPassowrd.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            txtPassowrd.Depth = 0;
+            txtPassowrd.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            txtPassowrd.HideSelection = true;
+            txtPassowrd.LeadingIcon = null;
+            txtPassowrd.Location = new System.Drawing.Point(36, 264);
+            txtPassowrd.MaxLength = 32767;
+            txtPassowrd.MouseState = MaterialSkinGT.MouseState.OUT;
+            txtPassowrd.Name = "txtPassowrd";
+            txtPassowrd.PasswordChar = '*';
+            txtPassowrd.PrefixSuffixText = null;
+            txtPassowrd.ReadOnly = false;
+            txtPassowrd.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            txtPassowrd.SelectedText = "";
+            txtPassowrd.SelectionLength = 0;
+            txtPassowrd.SelectionStart = 0;
+            txtPassowrd.ShortcutsEnabled = true;
+            txtPassowrd.Size = new System.Drawing.Size(300, 48);
+            txtPassowrd.TabIndex = 2;
+            txtPassowrd.TabStop = false;
+            txtPassowrd.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            txtPassowrd.TrailingIcon = null;
+            txtPassowrd.UseSystemPasswordChar = false;
             // 
             // materialLabel2
             // 
@@ -130,7 +129,6 @@
             btnLogin.Type = MaterialSkinGT.Controls.MaterialButton.MaterialButtonType.Contained;
             btnLogin.UseAccentColor = false;
             btnLogin.UseVisualStyleBackColor = true;
-            btnLogin.Click += BtnLogin_Click;
             // 
             // AdminView
             // 
@@ -139,9 +137,9 @@
             ClientSize = new System.Drawing.Size(373, 412);
             Controls.Add(btnLogin);
             Controls.Add(materialLabel2);
-            Controls.Add(materialTextBox21);
+            Controls.Add(txtPassowrd);
             Controls.Add(materialLabel1);
-            Controls.Add(materialComboBox1);
+            Controls.Add(cbUsers);
             Name = "AdminView";
             Text = "AdminView";
             ResumeLayout(false);
@@ -150,9 +148,9 @@
 
         #endregion
 
-        private MaterialSkinGT.Controls.MaterialComboBox materialComboBox1;
+        private MaterialSkinGT.Controls.MaterialComboBox cbUsers;
         private MaterialSkinGT.Controls.MaterialLabel materialLabel1;
-        private MaterialSkinGT.Controls.MaterialTextBox2 materialTextBox21;
+        private MaterialSkinGT.Controls.MaterialTextBox2 txtPassowrd;
         private MaterialSkinGT.Controls.MaterialLabel materialLabel2;
         private MaterialSkinGT.Controls.MaterialButton btnLogin;
     }

@@ -23,22 +23,68 @@ namespace JImage.Server.Views.Views.Admin
             InitializeComponent();
 
             this._viewModel = viewModel;
+
+
+
+        }
+
+        
+
+        public async Task LoadCatalogsBindingDataAndCommands()
+        {
+            await this._viewModel.LoadCatalogs(); BindingData(); BindCommands();
+        }
+
+
+        private void BindingData()
+        {       
+            //cbBoxUser
+            cbUsers.DataSource = _viewModel.UsersCatalog;
+            cbUsers.DisplayMember = "Name";
+            cbUsers.ValueMember = "Id";
+            cbUsers.DataBindings.Add(
+                "SelectedItem",
+                this._viewModel,
+                "Form.SelectedUser",
+                true,
+                DataSourceUpdateMode.OnPropertyChanged);
+
+
+            //txtPassword
+            txtPassowrd.DataBindings.Add(
+                "Text", 
+                this._viewModel, 
+                "Form.SelectedPassword", 
+                true, 
+                DataSourceUpdateMode.OnPropertyChanged);
+        }
+
+
+        private void BindCommands()
+        {
+            btnLogin.Click += async(a, b)=> 
+            {
+                await LoggingCommand();
+            };
         }
 
 
 
-        public async Task LoadUsers()
+        private async Task LoggingCommand()
         {
-            await this._viewModel.GetUsersAsync();
-        }
+            var result = await this._viewModel.LoginCommand();
 
-        private void BtnLogin_Click(object sender, EventArgs e)
-        {
+            if (!result)
+            {
+                this._viewModel.SendErrorMessage("Login failed");
+                return;
+            }
+
+
             var createView = UtilsViews.CreateView<MenuView>();
-
             createView.Shown += async (a, b) =>
             {
-                
+
             };
 
             createView.ShowDialog();

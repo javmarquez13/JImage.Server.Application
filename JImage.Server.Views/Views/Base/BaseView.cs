@@ -142,7 +142,7 @@ namespace JImage.Server.Views.Views.BaseModal
 
             createView.Shown += async (a, b) =>
             {
-                await createView.LoadUsers();
+                await createView.LoadCatalogsBindingDataAndCommands();
             };
 
             this.Hide();
