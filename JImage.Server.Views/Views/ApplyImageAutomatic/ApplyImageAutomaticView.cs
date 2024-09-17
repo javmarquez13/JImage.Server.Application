@@ -27,18 +27,14 @@ namespace JImage.Server.Views.Views.ApplyImageAutomatic
             this._viewModel.IsBusy = false;
         }
 
-
         private async void BtnApplyImage_Click(object sender, System.EventArgs e)
         {
             await this._viewModel.InitialTest();
            
             UpdateGUI();
-
             ApplyImageService();
-
             RebootingService();
         }
-
 
         private void UpdateGUI()
         {
@@ -57,8 +53,6 @@ namespace JImage.Server.Views.Views.ApplyImageAutomatic
 
             createView.ShowDialog();
         }
-
-
 
         private void RebootingService()
         {
